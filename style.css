@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1550px;
+  margin: 0 auto;
+}
+
+/* NAVBAR STYLE START */
+
+nav {
+  border-bottom: 1px solid #206e60;
+  background: #15594d;
+  color: #fff;
+  padding: 12px 192px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31.26px;
+  letter-spacing: 0%;
+}
+
+li {
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  border-radius: 5px;
+}
+li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li a:hover {
+  color: #447a71;
+}
+.button-border {
+  position: relative;
+  width: 190px;
+  height: 55px;
+  border: 1px solid #447a71;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.nav-button {
+  position: absolute;
+  bottom: -3px;
+  left: -5px;
+  width: 185px;
+  height: 50px;
+  border-radius: 40px;
+  background: white;
+  color: #15594d;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28.13px;
+  letter-spacing: 0%;
+}
+
+.nav-button:hover {
+  background: #f0f0f0;
+}
+
+.nav-button:active {
+  transition: all 0.7s ease-in-out;
+  scale: 0.5;
+}
+/* NAVBAR END END */
+
+main {
+  color: #fff;
+  background: #15594d;
+  /* width: 100%;
+  height: 100vh;
+  border: none; */
+}
+
+.one_section {
+  padding: 60px 192px 60px 50px;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Rasmlar orasidagi masofa */
+  padding: 20px;
+  width: 558px;
+  height: 500px;
+  position: relative;
+}
+
+.image-wrapper {
+  width: 33%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50px; /* Barcha tomonlar yumaloq bo‘ladi */
+}
+
+.image-wrapper img {
+  width: 508px;
+  height: 550px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+
+.part1 img {
+  left: -1px;
+  clip-path: inset(0 67% 0 0);
+}
+
+.part2 img {
+  left: -100%;
+  top: -10%;
+  clip-path: inset(0 34% 0 33%);
+}
+.part2 {
+  top: 10%;
+}
+
+.part3 img {
+  left: -205%;
+  clip-path: inset(0 0 0 67%);
+}
+
+.one_section_text_content {
+  position: relative;
+  display: inline-block; /* Rasmingizni o'z o'lchamida qoldiradi */
+}
+
+.one_section_text_content img {
+  margin-top: 90px;
+
+  bottom: 10px;
+  justify-items: center;
+  width: 90%; /* Rasm to‘liq chiqishi uchun */
+  height: auto;
+  opacity: 0.1; /* Rasm fon sifatida sezilar-sezilmas bo‘lishi uchun */
+}
+
+.text_absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Markazga joylash */
+
+  font-weight: bold;
+}
+.text_absolute p {
+  color: #fff; /* Matn rangi */
+  font-family: "El Messiri", sans-serif;
+
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 90px;
+  letter-spacing: 6%;
+}
+
+.button-border_sec1 button {
+  position: absolute;
+  bottom: -3px;
+  left: -5px;
+  width: 185px;
+  height: 50px;
+  border-radius: 40px;
+  background: white;
+  color: #15594d;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28.13px;
+  letter-spacing: 0%;
+}
+
+.button-border_sec1 button:hover {
+  background: #f0f0f0;
+}
+
+.button-border_sec1 button:active {
+  transition: all 0.7s ease-in-out;
+  scale: 0.5;
+}
+
+.button-border_sec1 {
+  position: relative;
+  width: 190px;
+  height: 55px;
+  border: 1px solid #447a71;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.imgs {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 10px; Rasmlar orasidagi masofa */
+  justify-content: center; /* Markazga joylash */
+}
+
+.imgs img {
+  width: 150px; /* Rasm kengligi */
+  object-fit: cover; /* Rasm siqilib ketmasligi uchun */
+  opacity: 0.1;
+  border-radius: 10px; /* Yumaloq burchak */
+}
+
+.imgs img:nth-child(2n) {
+  transform: rotate(180deg); /* Har ikkinchi rasmni aylantirish */
+}
+
+.main-frame {
+  width: 100%;
+  /* height: 600px; Sahifaga qarab sozla */
+  /* border: none; */
+}
+
+.section_two {
+  padding: 12px 192px;
+
+  color: #fff;
+}
+
+.section_two h1 {
+  text-align: center;
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 66px;
+  letter-spacing: 6%;
+}
+.section_two_title {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr); /* 4 ta ustun */
+  grid-template-rows: repeat(2, auto); /* 2 qator */
+  /* text-align: center; */
+
+  margin-top: 50px;
+}
+.text {
+  width: 290px;
+  padding: 40px;
+  /* gap: 5px; */
+}
+.text h2 {
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  margin-bottom: 10px;
+}
+.text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .one_section {
+    flex-direction: column-reverse;
+    padding: 40px 20px;
+    align-items: center;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .image-wrapper {
+    width: 80%;
+    height: auto;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+    position: static;
+    clip-path: none;
+  }
+  .part2 {
+    display: none;
+  }
+  .part3 {
+    display: none;
+  }
+
+  .text_absolute p {
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .button-border_sec1 button {
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+
+/* === 2️⃣ Telefon (480px dan kichik) === */
+@media (max-width: 480px) {
+  nav {
+    padding: 10px;
+  }
+
+  ul {
+    font-size: 16px;
+  }
+
+  .one_section {
+    padding: 30px 10px;
+  }
+
+  .text_absolute p {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .button-border_sec1 {
+    width: 150px;
+  }
+  .button-border_sec1 button {
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .image-wrapper {
+    width: 100%;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+}
