@@ -295,17 +295,31 @@ main {
   line-height: 22px;
   letter-spacing: 0%;
 }
+@media (max-width: 1024px) {
+  .section_two_title {
+    grid-template-columns: repeat(2, 1fr); /* 2 ustun */
+  }
+}
 
 @media (max-width: 768px) {
-  .container {
-    max-width: 100%;
-    padding: 0 20px;
+  .section_two_title {
+    grid-template-columns: repeat(2, 1fr); /* 2 ustun */
+  }
+
+  .section_two h1 {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .text {
+    width: 100%;
+    text-align: center;
   }
 
   nav {
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
   }
 
@@ -338,12 +352,6 @@ main {
     position: static;
     clip-path: none;
   }
-  .part2 {
-    display: none;
-  }
-  .part3 {
-    display: none;
-  }
 
   .text_absolute p {
     font-size: 36px;
@@ -356,29 +364,68 @@ main {
     height: 45px;
     font-size: 16px;
   }
+  .hero-img {
+    flex-wrap: wrap; /* Rasmlarni pastga tushirish */
+    justify-content: center;
+  }
+
+  .image-wrapper {
+    width: 45%; /* Ikkita rasm yonma-yon */
+  }
+
+  .part3 {
+    display: none; /* 3-rasmni yo‘q qilamiz */
+  }
+  .img img {
+    padding: 30px;
+  }
+  .imgs {
+    display: none;
+  }
 }
 
-/* === 2️⃣ Telefon (480px dan kichik) === */
 @media (max-width: 480px) {
-  nav {
-    padding: 10px;
+  .imgs {
+    display: none;
+  }
+  .img img {
+    padding: 30px;
+  }
+  .hero-img {
+    flex-wrap: wrap; /* Rasmlarni pastga tushirish */
+    justify-content: center;
   }
 
-  ul {
-    font-size: 16px;
+  .image-wrapper {
+    width: 45%; /* Ikkita rasm yonma-yon */
   }
 
-  .one_section {
-    padding: 30px 10px;
+  .part3 {
+    display: none; /* 3-rasmni yo‘q qilamiz */
+  }
+  .part2 {
+    display: none;
+  }
+  .section_two_title {
+    grid-template-columns: repeat(1, 1fr); /* 2 ustun */
+  }
+  .section_two {
+    padding: 20px;
+  }
+  .section_two h1 {
+    font-size: 32px;
+    line-height: 38px;
   }
 
   .text_absolute p {
     font-size: 28px;
     line-height: 38px;
   }
+
   .button-border_sec1 {
     width: 150px;
   }
+
   .button-border_sec1 button {
     width: 140px;
     height: 40px;
@@ -398,5 +445,90 @@ main {
   .image-wrapper img {
     width: 100%;
     height: auto;
+  }
+
+  .one_section {
+    padding: 20px 10px;
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  ul {
+    font-size: 16px;
+  }
+}
+
+/* === 320px ekran uchun maxsus style === */
+@media (max-width: 320px) {
+  .imgs {
+    display: none;
+  }
+  .img img {
+    justify-content: center;
+    display: flex;
+  }
+  nav {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  ul {
+    font-size: 14px;
+    gap: 3px;
+  }
+
+  .section_two_title {
+    grid-template-columns: repeat(1, 1fr); /* 2 ustun */
+  }
+  .section_two {
+    padding: 20px;
+  }
+  .section_two h1 {
+    font-size: 24px;
+    padding: 10px;
+    line-height: 30px;
+  }
+  .text {
+    width: 300px;
+  }
+  .img img {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .text_absolute p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .button-border_sec1 {
+    width: 130px;
+  }
+
+  .button-border_sec1 button {
+    width: 120px;
+    height: 35px;
+    font-size: 12px;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .image-wrapper {
+    width: 100%;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+  }
+
+  .one_section {
+    padding: 10px;
   }
 }
