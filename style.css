@@ -822,6 +822,32 @@ footer {
 /* Page 2 chisi Tugatdim */
 
 @media (max-width: 1024px) {
+  .one_section_Boulevard{
+  display: flex;
+
+ 
+    flex-wrap: wrap ;
+  }
+  .boulvard_text_content{
+    top: -60px;
+   
+  }
+  .text_boul{
+    height: 60px;
+  }
+  .two_section_title{
+    flex-wrap: wrap;
+  }
+  .two_section_title img{
+    width: 400px;
+  }
+  .four_section{
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .four_section img{
+    width: 400px;
+  }
   .section_two_title {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -975,9 +1001,73 @@ footer {
   .sec_four_img2 {
     width: 300px;
   }
+  .img_relativ img{
+    width: 250px;
+  }
+  .one_section_Boulevard{
+    display: flex;
+  
+   
+      flex-wrap: wrap ;
+    }
+    .boulvard_text_content{
+      top: -60px;
+     
+    }
+    .text_boul{
+      height: 60px;
+    }
+    .two_section_title{
+      flex-wrap: wrap;
+    }
+    .two_section_title img{
+      width: 390px;
+    }
+    .four_section{
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .four_section img{
+      width: 390px;
+    }
+    .one_section_Boulevard{
+      display: none;
+    }
+    .one_section_Boulevard img{
+      width: 300px;
+    }
 }
 
 @media (max-width: 480px) {
+  .two_section_page2{
+    padding: 20px;
+  }
+  .img_relativ img{
+    width: 250px;
+  }
+  .one_section_Boulevard{
+   display: none;
+    }
+    .boulvard_text_content{
+      top: -60px;
+     
+    }
+    .text_boul{
+      height: 60px;
+    }
+    .two_section_title{
+      flex-wrap: wrap;
+    }
+    .two_section_title img{
+      width: 300px;
+    }
+    .four_section{
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .four_section img{
+      width: 300px;
+    }
   footer {
     padding: 20px;
   }
@@ -1098,6 +1188,18 @@ footer {
 }
 
 @media (max-width: 320px) {
+  .two_section_page2{
+    padding: 20px;
+  }
+  .two_section_title img{
+width: 250px;
+  }
+  .two_section_title h2{
+    font-size: 30px;
+  }
+  .four_section_title h2{
+    font-size: 32px;
+  }
   .oNas_absolute_text {
     left: 50px;
     margin-bottom: 20px;
