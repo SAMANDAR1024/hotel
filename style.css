@@ -97,9 +97,6 @@ li a:hover {
 main {
   color: #fff;
   background: #15594d;
-  /* width: 100%;
-  height: 100vh;
-  border: none; */
 }
 
 .one_section {
@@ -113,7 +110,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* Rasmlar orasidagi masofa */
+  gap: 10px;
   padding: 20px;
   width: 558px;
   height: 500px;
@@ -125,7 +122,7 @@ main {
   height: 100%;
   overflow: hidden;
   position: relative;
-  border-radius: 50px; /* Barcha tomonlar yumaloq bo‘ladi */
+  border-radius: 50px;
 }
 
 .image-wrapper img {
@@ -157,7 +154,7 @@ main {
 
 .one_section_text_content {
   position: relative;
-  display: inline-block; /* Rasmingizni o'z o'lchamida qoldiradi */
+  display: inline-block;
 }
 
 .one_section_text_content img {
@@ -165,21 +162,21 @@ main {
 
   bottom: 10px;
   justify-items: center;
-  width: 90%; /* Rasm to‘liq chiqishi uchun */
+  width: 90%;
   height: auto;
-  opacity: 0.1; /* Rasm fon sifatida sezilar-sezilmas bo‘lishi uchun */
+  opacity: 0.1;
 }
 
 .text_absolute {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Markazga joylash */
+  transform: translate(-50%, -50%);
 
   font-weight: bold;
 }
 .text_absolute p {
-  color: #fff; /* Matn rangi */
+  color: #fff;
   font-family: "El Messiri", sans-serif;
 
   font-weight: 400;
@@ -232,25 +229,23 @@ main {
 .imgs {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 10px; Rasmlar orasidagi masofa */
-  justify-content: center; /* Markazga joylash */
+
+  justify-content: center;
 }
 
 .imgs img {
-  width: 150px; /* Rasm kengligi */
-  object-fit: cover; /* Rasm siqilib ketmasligi uchun */
+  width: 150px;
+  object-fit: cover;
   opacity: 0.1;
-  border-radius: 10px; /* Yumaloq burchak */
+  border-radius: 10px;
 }
 
 .imgs img:nth-child(2n) {
-  transform: rotate(180deg); /* Har ikkinchi rasmni aylantirish */
+  transform: rotate(180deg);
 }
 
 .main-frame {
   width: 100%;
-  /* height: 600px; Sahifaga qarab sozla */
-  /* border: none; */
 }
 
 .section_two {
@@ -269,22 +264,19 @@ main {
 .section_two_title {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(4, 1fr); /* 4 ta ustun */
-  grid-template-rows: repeat(2, auto); /* 2 qator */
-  /* text-align: center; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
 
   margin-top: 50px;
 }
 .text {
   width: 290px;
-  /* text-align: center; */
+
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 10px;
   margin: 0 auto;
-  /* padding: 40px; */
-  /* gap: 5px; */
 }
 .text h2 {
   font-family: "El Messiri", sans-serif;
@@ -308,7 +300,7 @@ main {
 
 .bgColor {
   background-color: #fff;
-  /* padding: 10px; */
+
   margin-top: 50px;
   padding-bottom: 20px;
   color: #15594d;
@@ -370,7 +362,6 @@ main {
   display: flex;
   margin-bottom: 20px;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
 }
 .info {
   width: 170px;
@@ -382,9 +373,6 @@ main {
   line-height: 40px;
   letter-spacing: 0%;
   margin-bottom: 6px;
-  /* border: 2px; */
-  /* border-bottom: #15594d; */
-  /* border-bottom: #15594D; */
 }
 .info p {
   font-family: "Roboto", sans-serif;
@@ -398,19 +386,19 @@ main {
   display: flex;
   margin-bottom: 20px;
   flex-wrap: wrap;
-  /* gap: 10px; Rasmlar orasidagi masofa */
-  justify-content: center; /* Markazga joylash */
+
+  justify-content: center;
 }
 
 .imgs_content img {
-  width: 150px; /* Rasm kengligi */
-  object-fit: cover; /* Rasm siqilib ketmasligi uchun */
-  /* opacity: 0.1; */
-  border-radius: 10px; /* Yumaloq burchak */
+  width: 150px;
+  object-fit: cover;
+
+  border-radius: 10px;
 }
 
 .imgs_content img:nth-child(2n) {
-  transform: rotate(180deg); /* Har ikkinchi rasmni aylantirish */
+  transform: rotate(180deg);
 }
 
 .section_four {
@@ -590,7 +578,7 @@ footer {
 .footer_addres {
   display: flex;
   padding-top: 15px;
-  /* align-items: center; */
+
   justify-content: space-between;
   margin-bottom: 30px;
 }
@@ -665,7 +653,7 @@ footer {
   gap: 32px;
   display: flex;
   padding: 60px 120px;
-  /* flex-wrap: wrap; */
+
   justify-content: center;
 }
 .malumots {
@@ -699,7 +687,7 @@ footer {
 .text_boul {
   display: flex;
   align-items: center;
-  /* width: 100px; */
+
   justify-content: space-between;
 }
 .text_boul h2 {
@@ -724,14 +712,13 @@ footer {
   margin-bottom: -90px;
   position: relative;
   z-index: 10;
-  /* margin-bottom: -40px; */
 }
 .two_section_page2 {
   background-color: #fff;
   padding: 100px 140px;
   color: #15594d;
   border-radius: 70px;
-  position: relative; /* Qo'shildi */
+  position: relative;
   z-index: 20;
 }
 .two_section_title {
@@ -762,7 +749,7 @@ footer {
 
 .three_section {
   display: flex;
-  /* margin: auto; */
+
   text-align: center;
   margin-top: 30px;
   flex-direction: column;
@@ -803,43 +790,40 @@ footer {
   letter-spacing: 6%;
 }
 
-
 .grid-img {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 ustun */
-  grid-template-rows: auto auto; /* 2 qator */
-  gap: 10px; /* Rasm orasidagi masofa */
-  max-width: 100%; /* Kerakli kenglik */
-  margin: auto; /* O‘rtaga joylash */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  max-width: 100%;
+  margin: auto;
 }
 
 .grid-item {
-  overflow: hidden; /* Rasmni qirqib olish */
-  border-radius: 8px; /* Burchaklarni yumaloq qilish */
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .grid-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Rasmlarni tartibli ko‘rsatish */
+  object-fit: cover;
 }
 
 .big {
-  grid-column: 1 / 2; /* Katta rasm chapda */
-  grid-row: 1 / 3; /* Ikki qatorni egallaydi */
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
 }
-
 .small {
-  grid-column: 2 / 3; /* Kichik rasmlar o‘ngda */
+  grid-column: 2 / 3;
 }
-
 
 /* Page 2 chisi Tugatdim */
 
 @media (max-width: 1024px) {
   .section_two_title {
-    grid-template-columns: repeat(2, 1fr); /* 2 ustun */
+    grid-template-columns: repeat(2, 1fr);
   }
   .section_three {
     flex-direction: column;
@@ -873,9 +857,6 @@ footer {
     line-height: 40px;
     letter-spacing: 0%;
     margin-bottom: 6px;
-    /* border: 2px; */
-    /* border-bottom: #15594d; */
-    /* border-bottom: #15594D; */
   }
   .info_content {
     display: flex;
@@ -895,7 +876,7 @@ footer {
     font-size: 12px;
   }
   .section_two_title {
-    grid-template-columns: repeat(2, 1fr); /* 2 ustun */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .section_two h1 {
@@ -957,16 +938,16 @@ footer {
     font-size: 16px;
   }
   .hero-img {
-    flex-wrap: wrap; /* Rasmlarni pastga tushirish */
+    flex-wrap: wrap;
     justify-content: center;
   }
 
   .image-wrapper {
-    width: 45%; /* Ikkita rasm yonma-yon */
+    width: 45%;
   }
 
   .part3 {
-    display: none; /* 3-rasmni yo‘q qilamiz */
+    display: none;
   }
   .img img {
     padding: 30px;
@@ -1024,22 +1005,22 @@ footer {
     padding: 20px;
   }
   .hero-img {
-    flex-wrap: wrap; /* Rasmlarni pastga tushirish */
+    flex-wrap: wrap;
     justify-content: center;
   }
 
   .image-wrapper {
-    width: 45%; /* Ikkita rasm yonma-yon */
+    width: 45%;
   }
 
   .part3 {
-    display: none; /* 3-rasmni yo‘q qilamiz */
+    display: none;
   }
   .part2 {
     display: none;
   }
   .section_two_title {
-    grid-template-columns: repeat(1, 1fr); /* 2 ustun */
+    grid-template-columns: repeat(1, 1fr);
   }
   .section_two {
     padding: 20px;
@@ -1099,7 +1080,6 @@ footer {
   .oNas_absolute_text h2 {
     font-size: 32px;
     width: 200px;
-    /* line-height: 48px; */
   }
   .oNas_absolute_text {
     padding: 5px;
@@ -1117,7 +1097,6 @@ footer {
   }
 }
 
-/* === 320px ekran uchun maxsus style === */
 @media (max-width: 320px) {
   .oNas_absolute_text {
     left: 50px;
@@ -1141,7 +1120,6 @@ footer {
   }
   .section_five {
     padding: 20px;
-    /* width: 50px; */
   }
   .section_five h2 {
     font-size: 36px;
@@ -1185,7 +1163,7 @@ footer {
   }
 
   .section_two_title {
-    grid-template-columns: repeat(1, 1fr); /* 2 ustun */
+    grid-template-columns: repeat(1, 1fr);
   }
   .section_two {
     padding: 20px;
