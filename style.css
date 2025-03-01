@@ -658,6 +658,185 @@ footer {
   height: 430px;
   width: 590px;
 }
+
+/* Page 2 chisi boshladim */
+.one_section_Boulevard {
+  padding: 60px 100px;
+  gap: 32px;
+  display: flex;
+  padding: 60px 120px;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+.malumots {
+  padding: 50px 192px;
+}
+.boulvard_text_content {
+  width: 500px;
+  position: absolute;
+  top: -10px;
+}
+.boulvard_text_content h2 {
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 90px;
+  letter-spacing: 6%;
+}
+.boulvard_text_content p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+.img_relativ {
+  position: relative;
+}
+.img_relativ img {
+  opacity: 0.1;
+}
+.text_boul {
+  display: flex;
+  align-items: center;
+  /* width: 100px; */
+  justify-content: space-between;
+}
+.text_boul h2 {
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 50.02px;
+  letter-spacing: 0%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.text_boul p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.big_img img {
+  width: 100%;
+  margin-bottom: -90px;
+  position: relative;
+  z-index: 10;
+  /* margin-bottom: -40px; */
+}
+.two_section_page2 {
+  background-color: #fff;
+  padding: 100px 140px;
+  color: #15594d;
+  border-radius: 70px;
+  position: relative; /* Qo'shildi */
+  z-index: 20;
+}
+.two_section_title {
+  display: flex;
+}
+.two_section_title {
+  display: flex;
+  justify-content: space-between;
+}
+.sec2_text_title {
+  width: 490px;
+}
+.sec2_text_title h2 {
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 90px;
+  letter-spacing: 6%;
+}
+.sec2_text_title p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+
+.three_section {
+  display: flex;
+  /* margin: auto; */
+  text-align: center;
+  margin-top: 30px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.three_section h2 {
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 90px;
+  color: #15594d;
+  letter-spacing: 6%;
+}
+.three_section p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+.four_section {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 70px;
+  justify-content: space-between;
+}
+.four_section_title {
+  width: 490px;
+}
+
+.four_section_title h2 {
+  font-family: "El Messiri", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 90px;
+  letter-spacing: 6%;
+}
+
+
+.grid-img {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 ustun */
+  grid-template-rows: auto auto; /* 2 qator */
+  gap: 10px; /* Rasm orasidagi masofa */
+  max-width: 100%; /* Kerakli kenglik */
+  margin: auto; /* O‘rtaga joylash */
+}
+
+.grid-item {
+  overflow: hidden; /* Rasmni qirqib olish */
+  border-radius: 8px; /* Burchaklarni yumaloq qilish */
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Rasmlarni tartibli ko‘rsatish */
+}
+
+.big {
+  grid-column: 1 / 2; /* Katta rasm chapda */
+  grid-row: 1 / 3; /* Ikki qatorni egallaydi */
+}
+
+.small {
+  grid-column: 2 / 3; /* Kichik rasmlar o‘ngda */
+}
+
+
+/* Page 2 chisi Tugatdim */
+
 @media (max-width: 1024px) {
   .section_two_title {
     grid-template-columns: repeat(2, 1fr); /* 2 ustun */
@@ -940,7 +1119,7 @@ footer {
 
 /* === 320px ekran uchun maxsus style === */
 @media (max-width: 320px) {
-  .oNas_absolute_text{
+  .oNas_absolute_text {
     left: 50px;
     margin-bottom: 20px;
   }
@@ -950,19 +1129,22 @@ footer {
   .section_three {
     padding: 20px 5px;
   }
-  .sec4_button_border{
-   display: none;
-
+  .sec4_button_border {
+    display: none;
   }
-  
-  .sec4-button{
+
+  .sec4-button {
     width: 90px;
     font-size: 12px;
     padding: 2px;
     left: -5px;
   }
-  .section_five h2{
-    font-size: 28px;
+  .section_five {
+    padding: 20px;
+    /* width: 50px; */
+  }
+  .section_five h2 {
+    font-size: 36px;
   }
   footer {
     padding: 20px;
@@ -1061,22 +1243,21 @@ footer {
     font-size: 24px;
     line-height: 36px;
   }
-  .sec_four_title img{
-width: 150px;
+  .sec_four_title img {
+    width: 150px;
   }
-  .sec_four_title p{
+  .sec_four_title p {
     font-size: 24px;
   }
-  .sec_four_img2{
+  .sec_four_img2 {
     width: 150px;
     height: 150px;
   }
   .section_four {
     padding: 20px;
-    
   }
-  .section_four h2{
+  .section_four h2 {
     margin-top: 90px;
- font-size: 20px;
+    font-size: 20px;
   }
 }
